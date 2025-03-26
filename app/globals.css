@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "react-multi-carousel/lib/styles.css";
+@tailwind utilities;
+
+/* 
+h1
+  --lg: text-7x;
+  --md:text-5xl;
+  --text-3x
+
+padding all page: px-4 lg:px-[100px]
+section: my-50px
+*/
+/* be careful with h-screen and w-screen */
+:root {
+  --background: #ffffff;
+  --foreground: #02111B;
+  --greyCharcoal: #3C4142;
+  --greenish: #96AE8D;
+  --eagle: #B6BAA4;
+  --beige: #C9D179;
+  --accent_green: #32BA55;
+  --accent_red: #D92326;
+  --primary: #02111B;
+  --black: #000000;
+  --white: #ffffff;
+  --smoke: #F6F8FA;
+  --grey: #696970
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --primary-grey: var(--greyCharcoal);
+  --grey: var(--grey);
+  --greenish: var(--greenish);
+  --eagle: var(--eagle);
+  --beige: var(--beige);
+  --accent_green: var(--accent_green);
+  --accent_red: var(--accent_red);
+  --primary: var(--primary);
+  --black: var(--black);
+  --white: var(--white);
+  --smoke: var(--smoke);
+  --text-2xl: 20px;
+  --text-3xl: 30px;
+  --text-4xl: 40px;
+  --text-5xl: 50px;
+  --text-6xl: 60px;
+  /* --breakpoint-xs: '0px';
+  --breakpoint-sm: '640px';
+  --breakpoint-md: '768px';
+  --breakpoint-lg: '1024px';
+  --breakpoint-xl: '1280px';
+  --breakpoint-2xl: '3000px'; */
+}
+
+@layer base {
+  h1 {
+    @apply lg:text-7xl md:text-5xl text-4xl font-extrabold;
+  }
+
+  h2 {
+    @apply lg:text-5xl text-4xl font-semibold;
+  }
+
+  h3 {
+    @apply lg:text-4xl text-3xl font-semibold;
+  }
+
+  h4 {
+    @apply lg:text-3xl text-2xl font-semibold;
+  }
+
+  h5 {
+    @apply lg:text-2xl text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-[1em] my-2;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--beige);
+  color: var(--white);
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--smoke);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--beige);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent_green);
+}

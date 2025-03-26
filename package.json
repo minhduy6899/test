@@ -1,0 +1,47 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/base": "^5.0.0-beta.70",
+    "@mui/icons-material": "^6.4.8",
+    "@mui/material": "^6.4.8",
+    "@mui/material-nextjs": "^6.4.3",
+    "@reduxjs/toolkit": "^2.6.1",
+    "animate.css": "^4.1.1",
+    "axios": "^1.8.4",
+    "classnames": "^2.5.1",
+    "framer-motion": "^12.6.0",
+    "mui-nested-menu": "^4.0.1",
+    "next": "15.2.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-intl": "^4.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.5.0",
+    "react-multi-carousel": "^2.8.5",
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1",
+    "swiper": "^11.2.6",
+    "tailwindcss-animate": "^1.0.7",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "tailwindcss": "^4"
+  }
+}
