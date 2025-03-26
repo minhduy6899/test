@@ -23,7 +23,7 @@
     "classnames": "^2.5.1",
     "framer-motion": "^12.6.0",
     "mui-nested-menu": "^4.0.1",
-    "next": "15.2.4",
+    "next": "^15.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-intl": "^4.0.2",
     "react": "^19.0.0",

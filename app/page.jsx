@@ -1,14 +1,16 @@
 // "use client";
-import HomePage from "./(frontend)/(home)/page";
-import 'animate.css';
+// import 'animate.css';
 // import { useState } from "react";
 // import LoginPage from "./(frontend)/(auth)/login/page";
+
+// import HomePage from "./(frontend)/(home)/page";
 
 export default function Home() {
 
   return (
    
-    <HomePage/> 
+    // <HomePage/> 
+    <div>lkasdjf</div>
  
   );
 }
